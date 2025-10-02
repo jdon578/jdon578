@@ -1,4 +1,6 @@
-## Hi there 👋
+## Welcome to my profile!!
+
+I will edit this later, currently working on my profile!!
 
 <!--
 **jdon578/jdon578** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
