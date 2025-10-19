@@ -1,0 +1,65 @@
+/*VARIABLES*/
+:root{
+    --backgroundcolor: #fbfcff;
+    --fontcolor: #010101;
+    --blue: #1c6e8c;
+    --gray: #d0ccd0;
+    --darkblue: #274156;
+}
+
+@font-face {
+    font-family: regular-text;
+    src: url("../fonts/Coolvetica\ Rg.otf");
+}
+
+@font-face{
+    font-family: fun-text;
+    src: url("../fonts/Tokyo.ttf");
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    color: var(--fontcolor);
+    font-family: regular-text;
+}
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid:
+    "sidebar body" 1fr
+    / 30% 1fr;
+  gap: 8px;
+}
+
+.sidebar { grid-area: sidebar; }
+.body { grid-area: body; }
+
+.wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    margin-bottom: 10px;
+    font-family: regular-text;
+  }
+
+.artwork {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 300px;
+}
+
+.description{
+  width: 300px;
+  color: var(--fontcolor);
+  font-family: regular-text;
+  margin-left: 275px;
+}
+
+.drawing{
+  width: 500px;
+  height: auto;
+}

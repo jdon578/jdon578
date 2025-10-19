@@ -1,0 +1,93 @@
+/*VARIABLES*/
+:root{
+    --backgroundcolor: #fbfcff;
+    --fontcolor: #010101;
+    --blue: #1c6e8c;
+    --gray: #d0ccd0;
+    --darkblue: #274156;
+}
+
+@font-face {
+    font-family: regular-text;
+    src: url("fonts/Coolvetica\ Rg.otf");
+}
+
+@font-face{
+    font-family: fun-text;
+    src: url("fonts/Tokyo.ttf");
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    color: var(--fontcolor);
+    font-family: regular-text;
+    font-size: 20px;
+}
+
+a:link{
+    color: var(--fontcolor);
+  }
+  
+  a:visited{
+    color: var(--fontcolor)  
+  }
+  
+  a:hover{
+    color: var(--darkblue);  
+  }
+
+/*navigation*/
+#navbar {
+    height: auto;
+    width: 100%;
+    margin: 10px
+  }
+  
+  #navbar ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+  }
+  
+  #navbar li{
+    padding-top: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  
+  .art {
+    height: auto;
+    width: 800px;
+    overflow: scroll;
+    padding: 5px;
+    border: 5px ridge black;
+  }
+
+  .layoutArt {
+    width: 100%;
+  
+    display: grid;
+    grid:
+      "sidebarArt bodyArt" 1fr
+      / 30% 1fr;
+    gap: 8px;
+  }
+  
+  .sidebarArt { grid-area: sidebarArt; }
+  .bodyArt { grid-area: bodyArt; }
+
+  .header{
+    font-family: fun-text;
+    color: var(--blue);
+  }
+
+  h1 {
+    font-size: 75px;
+  }
+
+  ul {
+   list-style: none; 
+  }
