@@ -79,6 +79,19 @@ a:link{
   .sidebarArt { grid-area: sidebarArt; }
   .bodyArt { grid-area: bodyArt; }
 
+    .layoutAbout {
+    width: 100%;
+  
+    display: grid;
+    grid:
+      "sidebarAbout bodyAbout" 1fr
+      / 30% 1fr;
+    gap: 8px;
+  }
+  
+  .sidebarAbout { grid-area: sidebarAbout; }
+  .bodyAbout { grid-area: bodyAbout; padding-left: 50px; padding-right: 100px;}
+
   .header{
     font-family: fun-text;
     color: var(--blue);
