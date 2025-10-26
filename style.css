@@ -20,7 +20,7 @@
 body{
     background-color: var(--backgroundcolor);
     color: var(--fontcolor);
-    font-family: regular-text;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
@@ -76,8 +76,8 @@ a:link{
     gap: 8px;
   }
   
-  .sidebarArt { grid-area: sidebarArt; }
-  .bodyArt { grid-area: bodyArt; }
+  .sidebarArt { grid-area: sidebarArt; padding-left: 100px;}
+  .bodyArt { grid-area: bodyArt; margin-left: 150px;}
 
     .layoutAbout {
     width: 100%;
@@ -98,7 +98,7 @@ a:link{
   }
 
   h1 {
-    font-size: 75px;
+    font-size: 65px;
   }
 
   ul {

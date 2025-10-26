@@ -20,7 +20,7 @@
 body{
     background-color: var(--backgroundcolor);
     color: var(--fontcolor);
-    font-family: regular-text;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .layout {
@@ -42,7 +42,7 @@ body{
     margin-right: auto;
     max-width: 800px;
     margin-bottom: 10px;
-    font-family: regular-text;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 .artwork {
@@ -55,7 +55,7 @@ body{
 .description{
   width: 300px;
   color: var(--fontcolor);
-  font-family: regular-text;
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 275px;
 }
 
