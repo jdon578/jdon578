@@ -12,7 +12,14 @@
             <div class = "wrapper">
                 <section class = "layout">
                     <div class = "sidebar">
-                        <img src = "artwork/schoolwork/intermediate midterm.jpg" class = "drawing">
+                        <img id = "drawing" src = "artwork/schoolwork/intermediate midterm.jpg" class = "drawing"
+                        alt = "Intermediate Drawing Midterm" onClick = "openModal('modal1', 'intermediateM')">
+                        <div id = "modal1" class = "modalC">
+                            <span class = "close" onclick = "closeModal('modal1')">&times;</span>
+                            <img src = "artwork/schoolwork/intermediate midterm.jpg" class = "modal-content"
+                        alt = "Intermediate Drawing Midterm">
+                            <div id = "caption"></div>
+                        </div>
                     </div>
                     <div class = "body">
                         <div class = "description">
@@ -30,8 +37,18 @@
                         <div class = "wrapper">
                 <section class = "layout">
                     <div class = "sidebar">
-                        <img src = "artwork/schoolwork/intermediate 1.jpg" class = "drawing">
-                        <img src = "artwork/schoolwork/intermediate 2.jpg" class = "drawing">
+                        <img id = "drawing" src = "artwork/schoolwork/intermediate 1.jpg" class = "drawing"
+                        alt = "Intermediate Drawing Project 1, Part 1" onclick="openModal('modal2', 'intermediate1')">
+                        <img id = "drawing" src = "artwork/schoolwork/intermediate 2.jpg" class = "drawing"
+                        alt = "Intermediate Drawing Project 1, Part 2" onclick="openModal('modal2', 'intermediate2')">
+                        <div id = "modal2" class = "modalC">
+                            <span class = "close" onclick = "closeModal('modal2')">&times;</span>
+                            <img src = "artwork/schoolwork/intermediate 1.jpg" class = "modal-content"
+                        alt = "Intermediate Drawing Project 1, Part 1">
+                        <img src = "artwork/schoolwork/intermediate 2.jpg" class = "modal-content"
+                        alt = "Intermediate Drawing Project 1, Part 2">
+                            <div id = "caption"></div>
+                        </div>
                     </div>
                     <div class = "body">
                         <div class = "description">
@@ -49,7 +66,14 @@
             <div class = "wrapper">
                 <section class = "layout">
                     <div class = "sidebar">
-                        <img src = "artwork/schoolwork/life drawing final.jpg" class = "drawing">
+                        <img id = "drawing" src = "artwork/schoolwork/life drawing final.jpg" class = "drawing"
+                        alt = "Life Drawing Final" onclick="openModal('modal3' , 'lifeF')">
+                                                <div id = "modal3" class = "modalC">
+                            <span class = "close" onclick = "closeModal('modal3')">&times;</span>
+                            <img src = "artwork/schoolwork/life drawing final.jpg" class = "modal-content"
+                        alt = "Life Drawing Final">
+                            <div id = "caption"></div>
+                        </div>
                     </div>
                     <div class = "body">
                         <div class = "description">
@@ -65,7 +89,14 @@
                         <div class = "wrapper">
                 <section class = "layout">
                     <div class = "sidebar">
-                        <img src = "artwork/schoolwork/life drawing midterm.jpg" class = "drawing">
+                        <img id = "drawing" src = "artwork/schoolwork/life drawing midterm.jpg" class = "drawing"
+                        alt = "Life Drawing Midterm" onclick="openModal('modal4', 'lifeM')">
+                            <div id = "modal4" class = "modalC">
+                            <span class = "close" onclick = "closeModal('modal4')">&times;</span>
+                            <img src = "artwork/schoolwork/life drawing midterm.jpg" class = "modal-content"
+                        alt = "Life Drawing Midterm">
+                            <div id = "caption"></div>
+                        </div>
                     </div>
                     <div class = "body">
                         <div class = "description">
@@ -81,3 +112,22 @@
         </div>
     </body>
 </html>
+
+        <script>
+    function openModal(modalId, caption){
+        let modal = document.getElementById(modalId);
+        modal.style.display = "flex";
+        modal.classList.add("show");
+        let message = modal.querySelector(".caption");
+        message.innerText = caption;
+    }
+
+    function closeModal(modalId){
+        let modal = document.getElementById(modalId);
+        modal.classList.remove("show");
+        setTimeout(function() {
+            modal.style.display = "none";
+            modal.querySelector(".caption").innerText = "";
+        }, 300);
+    }
+</script>
