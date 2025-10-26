@@ -76,8 +76,8 @@ a:link{
     gap: 8px;
   }
   
-  .sidebarArt { grid-area: sidebarArt; padding-left: 100px;}
-  .bodyArt { grid-area: bodyArt; margin-left: 150px;}
+  .sidebarArt { grid-area: sidebarArt; padding-left: 90px;}
+  .bodyArt { grid-area: bodyArt; margin-left: 60px;}
 
     .layoutAbout {
     width: 100%;
