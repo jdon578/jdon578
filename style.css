@@ -90,7 +90,7 @@ a:link{
   }
   
   .sidebarAbout { grid-area: sidebarAbout; }
-  .bodyAbout { grid-area: bodyAbout; padding-left: 50px; padding-right: 100px;}
+  .bodyAbout { grid-area: bodyAbout; padding-left: 50px; padding-right: 100px; justify-content: left;}
 
   .header{
     font-family: fun-text;
