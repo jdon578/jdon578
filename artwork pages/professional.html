@@ -14,9 +14,77 @@
             <h3>Rubies II is a costume company located in New York. They specialize in costumes, holiday products, and overall
                 halloween materials.
             </h3>
-            <h3>Worked on costume designs for licenses such as Welcome to Derry, Transformers, Superman, and more.</h3>
+            <h3>I worked on costume designs for licenses such as Welcome to Derry, Transformers, Superman, and more.</h3>
             <br>
-            <p>Due to an NDA, my artwork cannot be displayed at this time.</p>
+                                    <div class = "wrapper">
+                <section class = "layout">
+                    <div class = "sidebar">
+                        <img id = "drawing" src = "artwork/professional/bumble bee.jpeg" class = "drawing"
+                        alt = "Bumblebee Funflatable" onclick="openModal('modal1', 'intermediate1')">
+                        <img id = "drawing" src = "artwork/professional/bubble bee flat lay front.jpeg" class = "drawing"
+                        alt = "Bumblebee Funflatable - Deflated" onclick="openModal('modal1', 'intermediate2')">
+                        <div id = "modal1" class = "modalC">
+                            <span class = "close" onclick = "closeModal('modal1')">&times;</span>
+                            <img src = "artwork/professional/bumble bee.jpeg" class = "modal-content"
+                        alt = "Bumblebee Funflatable">
+                        <img src = "artwork/professional/bubble bee flat lay front.jpeg" class = "modal-content"
+                        alt = "Bumblebee Funflatable - Deflated">
+                            <div id = "caption"></div>
+                        </div>
+                    </div>
+                    <div class = "body">
+                        <div class = "description">
+                            <h2>Transformers: Bumblebee Funflatable</h2>
+                            <p>One of my largest pieces while working at Rubies II was the Bumblebee Funflatable.
+                            </p>
+                    </div>
+                    </div>
+                </section>
+            </div>
+                                                <div class = "wrapper">
+                <section class = "layout">
+                    <div class = "sidebar">
+                        <img id = "drawing" src = "artwork/professional/peppa.jpeg" class = "drawing"
+                        alt = "Peppa Pig Lawn Inflatable" onclick="openModal('modal2', 'intermediate1')">
+                        <img id = "drawing" src = "artwork/professional/peppa lawn.jpeg" class = "drawing"
+                        alt = "Peppa Pig Lawn Inflatable Side" onclick="openModal('modal2', 'intermediate2')">
+                        <div id = "modal1" class = "modalC">
+                            <span class = "close" onclick = "closeModal('modal2')">&times;</span>
+                            <img src = "artwork/professional/peppa.jpeg" class = "modal-content"
+                        alt = "Peppa Pig Lawn Inflatable">
+                        <img src = "artwork/professional/peppa lawn.jpeg" class = "modal-content"
+                        alt = "Peppa Pig Lawn Inflatable Side">
+                            <div id = "caption"></div>
+                        </div>
+                    </div>
+                    <div class = "body">
+                        <div class = "description">
+                            <h2>Peppa Pig Halloween Lawn Inflatable</h2>
+                            <p>
+                            </p>
+                    </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </body>
 </html>
+
+<script>
+    function openModal(modalId, caption){
+        let modal = document.getElementById(modalId);
+        modal.style.display = "flex";
+        modal.classList.add("show");
+        let message = modal.querySelector(".caption");
+        message.innerText = caption;
+    }
+
+    function closeModal(modalId){
+        let modal = document.getElementById(modalId);
+        modal.classList.remove("show");
+        setTimeout(function() {
+            modal.style.display = "none";
+            modal.querySelector(".caption").innerText = "";
+        }, 300);
+    }
+</script>
